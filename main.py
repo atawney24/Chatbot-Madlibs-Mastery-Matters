@@ -34,6 +34,8 @@ if(askdraw == 'Yes'):
   t.forward(80)
   t.right(90)
   t.forward(80)
+  time.sleep(2)
+  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends?'))
 elif(askdraw == 'yes'):
   t.color(color)
   t.circle(30)
@@ -45,6 +47,8 @@ elif(askdraw == 'yes'):
   t.forward(80)
   t.right(90)
   t.forward(80)
+  time.sleep(2)
+  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends?'))
 elif(askdraw == 'y'):
   t.color(color)
   t.circle(30)
@@ -56,6 +60,8 @@ elif(askdraw == 'y'):
   t.forward(80)
   t.right(90)
   t.forward(80)
+  time.sleep(2)
+  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends?'))
 elif(askdraw == 'Y'):
   t.color(color)
   t.circle(30)
@@ -67,9 +73,18 @@ elif(askdraw == 'Y'):
   t.forward(80)
   t.right(90)
   t.forward(80)
+  time.sleep(2)
+  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends?'))
 else:
-  print(' ')
+  askaboutfriends = input(str('The color ' + color + '! is very nice, anyways do you have any friends yes or no? '))
 
-  
-
-
+if(askaboutfriends == 'Yes'):
+  askfriendsnames = input(str('Oh thats good what are your friends names?'))
+elif(askaboutfriends == 'yes'):
+  askfriendsnames = input(str('Oh thats good what are your friends names?'))
+elif(askaboutfriends == 'Y'):
+  askfriendsnames = input(str('Oh thats good what are your friends names?'))
+elif(askaboutfriends == 'y'):
+  askfriendsnames = input(str('Oh thats good what are your friends names?'))
+else:
+  askfriendsnames = input(str('Oh well if you dont have any friends I would be your friend if i wasnt a robot'))
