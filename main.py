@@ -35,7 +35,7 @@ if(askdraw == 'Yes'):
   t.right(90)
   t.forward(80)
   time.sleep(2)
-  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends?'))
+  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends? '))
 elif(askdraw == 'yes'):
   t.color(color)
   t.circle(30)
@@ -61,7 +61,7 @@ elif(askdraw == 'y'):
   t.right(90)
   t.forward(80)
   time.sleep(2)
-  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends?'))
+  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends? '))
 elif(askdraw == 'Y'):
   t.color(color)
   t.circle(30)
@@ -74,18 +74,18 @@ elif(askdraw == 'Y'):
   t.right(90)
   t.forward(80)
   time.sleep(2)
-  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends?'))
+  askfriends = input(str('Wow! I love the color ' + color + '! so anyways do you have any friends? '))
 else:
   askfriends = input(str('The color ' + color + '! is very nice, anyways do you have any friends yes or no? '))
 
 if(askfriends == 'Yes'):
-  askfriendsnames = input(str('Oh thats good what are your friends names?'))
+  askfriendsnames = input(str('Oh thats good what are your friends names? '))
 elif(askfriends == 'yes'):
-  askfriendsnames = input(str('Oh thats good what are your friends names?'))
+  askfriendsnames = input(str('Oh thats good what are your friends names? '))
 elif(askfriends == 'Y'):
-  askfriendsnames = input(str('Oh thats good what are your friends names?'))
+  askfriendsnames = input(str('Oh thats good what are your friends names? '))
 elif(askfriends == 'y'):
-  askfriendsnames = input(str('Oh thats good what are your friends names?'))
+  askfriendsnames = input(str('Oh thats good what are your friends names? '))
 else:
   askfriendsnames = input(str('Oh well what is a few of your family members names? '))
 listfriendsnamesaskcrime = input(str('The people you listed names are ' + askfriendsnames + ' and they are very nice names! Anyways just curious have you ever commited a crime? '))
@@ -103,4 +103,14 @@ else:
 
 thatsaseriouscrime = input(str('WOAH!! ' + askwhatcrime + ' IS A VERY SERIOUS CRIME... would you do it again? '))
 if(thatsaseriouscrime == 'Yes'):
-  wouldyoudoitagain = input(str('WHY? ' + askwhatcrime + ' IS A VERY SERIOUS FEDERAL CRIME!!!, but I wont judge '))
+  wouldyoudoitagain = input(str('WHY? ' + askwhatcrime + ' IS A VERY SERIOUS FEDERAL CRIME!!! Anyways what is your favorite food? '))
+elif(thatsaseriouscrime == 'yes'):
+  wouldyoudoitagain = input(str('WHY? ' + askwhatcrime + ' IS A VERY SERIOUS FEDERAL CRIME!!! Anyways what is your favorite food? '))
+elif(thatsaseriouscrime == 'Y'):
+  wouldyoudoitagain = input(str('WHY? ' + askwhatcrime + ' IS A VERY SERIOUS FEDERAL CRIME!!! Anyways what is your favorite food? '))
+elif(thatsaseriouscrime == 'y'):
+  wouldyoudoitagain = input(str('WHY? ' + askwhatcrime + ' IS A VERY SERIOUS FEDERAL CRIME!!! Anyways what is your favorite food? '))
+else:
+  wouldyoudoitagain = input(str('Oh well thats good whats your favorite food? '))
+print(wouldyoudoitagain + 'is a very good food! ')
+print('Anyways ' + firstquestion + ' Ive gotta go commit tax you should go and eat ' + wouldyoudoitagain + ' and go and commit this crime ' + listfriendsnamesaskcrime)
